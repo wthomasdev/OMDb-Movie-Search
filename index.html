@@ -1,0 +1,40 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link rel="stylesheet" href="/style/main.css">
+  <title>Movie Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body ng-app="movieApp">
+  <div class="container">
+  <div class="row" id="centerDiv">
+      <div class="col 12">
+
+          <a href="/"><h1> OMDb API Search </h1></a>
+          <br>
+          <h5 class="center">Enter a movie by title:</h5>
+          <form>
+              <input name="search" type="text" id="trialBorder" ng-model="movie.search">
+              <button ui-sref="search({query: movie.search})" type="submit" class="waves-effect waves-light btn blue"><i class="material-icons right">search</i>Search</button>
+          </form>
+
+      </div>
+  </div>
+  </div>
+
+
+    <div ui-view></div>
+
+<script src="https://code.angularjs.org/1.2.13/angular.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+<script src="./javascript/app.js"></script>
+<script src="./javascript/controllers.js"></script>
+
+
+</body>
+</html>

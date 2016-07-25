@@ -1,0 +1,31 @@
+#centerDiv {
+  height:40vh;
+  width:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.displayDiv {
+  margin-top:15vh;
+}
+
+.flexDiv {
+  display:flex;
+}
+
+img {
+  margin-top:5vh;
+  height:40vh;
+  width:15vw;
+  margin-bottom:5vh;
+}
+
+.contentDiv {
+  margin-top:5vh;
+  margin-left:2vw;
+}
+
+.movieResult {
+  min-height:300px
+}
